@@ -1,0 +1,26 @@
+.display{
+    /* background-image: url("../static/moon.jpg"); */
+    background-size: cover;
+    background-position: center;
+    width: 270px;
+    height: 230px;
+    margin-top: 25px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.blank-div{
+    width: 270px;
+    height: 230px;
+    background-color: #E3F2FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.empty-text{
+    margin: 5px;
+    text-align: center;
+}
