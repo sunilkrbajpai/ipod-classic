@@ -1,51 +1,52 @@
 /* container div */
 .now-playing-container{
     width: 270px;
-    height: 190px;
+    height: 230px;
     background-color: #E3F2FD;
 }
 
 /* Song details div */
 .song-details{
     display: flex;
-    align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 0px;
 }
 
+.thumb{
+    width: 40%;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.detailsSong{
+    width: 60%;
+    padding-top: 18px;
+}
+.statusTxt{
+    color: rgb(26, 179, 240);
+    font-size: large;
+    text-align: center;
+}
 /* img in song details */
 .song-details img{
     margin: auto;
-    width: 100px;
+    width: 90px;
     height: 100px;
+    box-shadow: 2px 2px 1px 1px lightgray;
 }
 
 /* name of song */
-.song-details h1{
+.song-details h3{
     margin: 0px;
-    font-size: 20px;
+    font-size: 24px;
+    display:inline;
 }
 
 /* playing or not */
-.status{
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-/* progress of song duration */
-#progress{
-    width: 65%;
-    height: 10px;
-    margin: 0px 5px;
-    background-color: gray;
-}
-
-/* progress bar filled */
-#progress-bar{
-    height: 10px;
-    background-color: green;
+.progress{
+    width: 83%;
+    height: 8px;
+    margin-top: 40px;
+    margin-left: 20px;
+    text-align: center;
 }

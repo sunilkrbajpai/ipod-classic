@@ -37,9 +37,11 @@ class Header extends React.Component {
         return (
             <div className="bar">
                 <h5 className="heading"> 
-                    <img className="apple-logo" src={AppleLogo} alt="LOGO"/>
-                    <img className="wifi" src={WifiImg} alt="wifi"/>
+                    {/* <img className="apple-logo" src={AppleLogo} alt="LOGO"/> */}
+                    iPod
                 </h5>
+                <img className="wifi" src={WifiImg} alt="wifi"/>
+
                 <h3 className="time">{time}</h3>
                 <img className="battery" src={BatteryImage} alt="Battery"/>
             </div>

@@ -13,20 +13,22 @@
 /* ipod logo */
 .heading{
     margin: 0px;
+    margin-left: 3px;
+    margin-top: 2px;
     padding: 0px;
 }
 
 /* time */
 .time{
-   margin: 0px;
    padding: 0px; 
-   margin: auto;
+   margin-left: 67px;
 }
 
 /* battery icon */
 .battery{
     width: 22px;
     height: 20px;
+    margin-left: auto;
     margin-right: 3px;
 }
 .apple-logo{

@@ -1,9 +1,12 @@
 import React from 'react';
 import '../styles/App.css';
 import Case from './Case';
-import song1 from "../assets/songs/Laung Gwacha.mp3"
+import song1 from "../assets/songs/Shaitan Ka Saala.mp3"
 import song2 from "../assets/songs/Shape of you.mp3"
 import song3 from "../assets/songs/Faded.mp3"
+import img1 from '../assets/Thumbnails/shaitan_ka_sala.jpeg';
+import img2 from '../assets/Thumbnails/shape_of_you.png';
+import img3 from '../assets/Thumbnails/faded.jpg';
 
 
 class App extends React.Component {
@@ -14,7 +17,8 @@ class App extends React.Component {
       menuItems:["Cover Flow", "Music", "Games","Settings","About"],
       musicItems:["All Songs", "Albums", "Artists","Playlists"],
       songItemsUrl:[song1,song2,song3],
-      songItems:["Laung Gwacha","Shape of you","Faded"],
+      songItems:["Shaitaan ka Saala","Shape of you","Faded"],
+      songImageURL:[img1,img2,img3],
       songIndex:0,
       lengthMenuKey:{"-1":4,1:3,4:2,8:5,3:0},
       menuMapping:{"-1":[0,1,2,3,10],1:[4,5,6,9],3:[8]},
@@ -22,7 +26,7 @@ class App extends React.Component {
       navigationStack:[],
       songUrl:song1,
       playing:false,
-      theme:"rgb(210, 210, 210)",
+      theme:"#f0b4e7",
       audio:new Audio(song1)
     }
   }
@@ -117,20 +121,20 @@ class App extends React.Component {
 
     if(fromMenu===8){
       if(id===0){
-        this.setState({theme:"#ff4d4d"});
+        this.setState({theme:"#f57d7d"});
       }
       else if(id===1){
-        this.setState({theme:"#736e6e"});
+        this.setState({theme:"#918989"});
       }else if(id===2){
         this.setState({theme:"#F5DDC5"});
       }else if(id===3){
-        this.setState({theme:"#D1CDDA"})
+        this.setState({theme:"#f0b4e7"})
       }
       else if(id===4){
         this.setState({theme:"rgb(210, 210, 210)"})
       }
       else if(id===5){
-        this.setState({theme:" #00bfff"})
+        this.setState({theme:" #7DDEFF"})
       }
       return;
     }
@@ -156,7 +160,7 @@ class App extends React.Component {
   }
 
   render() {
-    const { active, currentMenu, menuItems, musicItems, songItems ,playing, songIndex ,theme} = this.state;
+    const { active, currentMenu, menuItems, musicItems, songItems ,playing, songIndex ,theme,songImageURL,audio,songUrl} = this.state;
     return (
       <div className="App">
         <Case 
@@ -174,6 +178,9 @@ class App extends React.Component {
           songItems={songItems} 
           playing={playing} 
           theme={theme}
+          songImageURL={songImageURL}
+          audio={audio}
+          songUrl={songUrl}
         />
       </div>
     );
