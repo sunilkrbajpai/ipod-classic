@@ -1,26 +1,36 @@
-.display{
-    /* background-image: url("../static/moon.jpg"); */
-    background-size: cover;
-    background-position: center;
-    width: 270px;
-    height: 230px;
-    margin-top: 25px;
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
+.display {
+  background-size: cover;
+  background-position: center;
+  width: 270px;
+  height: 230px;
+  margin-top: 25px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
 }
 
-.blank-div{
-    width: 270px;
-    height: 230px;
-    background-color: #E3F2FD;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+/* show heading of options */
+.head-name {
+  margin-top: 0px;
+}
+/* show icons of options */
+.icon-name {
+  margin-top: -20px;
+  width: 100px;
+  height: 100px;
 }
 
-.empty-text{
-    margin: 5px;
-    text-align: center;
+/* show blank div on options select */
+.blank-div {
+  width: 270px;
+  height: 230px;
+  background-color: #e3f2fd;
+  padding-top: 30px;
+  justify-content: center;
+  text-align: center;
 }
+
+/* .empty-text {
+  margin: 5px;
+  text-align: center;
+} */
