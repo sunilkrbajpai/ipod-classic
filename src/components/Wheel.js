@@ -11,21 +11,21 @@ class Wheel extends React.Component {
     return (
       <div className="wheel-container">
         <div className="wheel" id="wheel">
-          <div className="controll" id="menu">
+          <div className="control" id="menu">
             <div>
               <strong>MENU</strong>
             </div>
           </div>
-          <div className="controll" id="forward">
+          <div className="control" id="forward">
             <i className="fas fa-fast-forward"></i>
           </div>
-          <div className="controll" id="play-pause">
+          <div className="control" id="play-pause">
             <div>
               <i className="fas fa-play"></i>
               <i className="fas fa-pause"></i>
             </div>
           </div>
-          <div className="controll" id="backward">
+          <div className="control" id="backward">
             <i className="fas fa-fast-backward"></i>
           </div>
         </div>

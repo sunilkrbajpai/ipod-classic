@@ -8,6 +8,7 @@ import about from "../assets/programer.gif";
 
 class Menu extends React.Component {
   render() {
+    // show menu options
     const { active, menuItems } = this.props;
     return (
       <div className="menu-container">

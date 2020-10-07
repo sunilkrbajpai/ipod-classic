@@ -3,6 +3,7 @@ import React, { Component } from "react";
 export default class About extends Component {
   render() {
     return (
+      // about menu code here
       <div className="back">
         <h2>About</h2>
         <p style={{ paddingLeft: "5px" }}>

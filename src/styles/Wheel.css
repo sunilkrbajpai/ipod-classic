@@ -1,70 +1,70 @@
 /* wheel container div */
-.wheel-container{
-    position: relative;
-    width: 200px;
-    height: 200px;  
-    margin-top: auto;
-    margin-bottom: 30px;
-    display: flex;
+.wheel-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-top: auto;
+  margin-bottom: 30px;
+  display: flex;
 }
 
 /* wheel with border radius 50% */
-.wheel{
-    cursor: pointer;
-    position: relative;
-    width: 200px;
-    height: 200px;
-    background-color: #3d3c36;   
-    border-radius: 50%;
-    box-shadow: 0 8px 6px -6px #888888;
+.wheel {
+  cursor: pointer;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #3d3c36;
+  border-radius: 50%;
+  box-shadow: 0 8px 6px -6px #888888;
 }
 
 /* all controls */
-.controll{
-    color: rgb(210, 210, 210);
-    font-weight: 900;
-    position: absolute;
+.control {
+  color: rgb(210, 210, 210);
+  font-weight: 900;
+  position: absolute;
 }
 
 /* menu button */
-#menu{
-    left: 38%;
-    top: 11%;
-    font-weight: 900;
-    font-size: 18px;
-    width: 40px;
-    height: 20px;
+#menu {
+  left: 38%;
+  top: 11%;
+  font-weight: 900;
+  font-size: 18px;
+  width: 40px;
+  height: 20px;
 }
 
 /* reverse button */
-#backward{
-    left: 10%;
-    top: 45%;
-    font-size: 23px;
+#backward {
+  left: 10%;
+  top: 45%;
+  font-size: 23px;
 }
 
 /* forward button */
-#forward{
-    right: 10%;
-    top: 45%;
-    font-size: 23px;
+#forward {
+  right: 10%;
+  top: 45%;
+  font-size: 23px;
 }
 
 /* play-pause button */
-#play-pause{
-    bottom: 11%;
-    left: 44%;
-    width: 40px;
-    height: 20px;
+#play-pause {
+  bottom: 11%;
+  left: 44%;
+  width: 40px;
+  height: 20px;
 }
 
 /* center button */
-.blank{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color:  rgb(210, 210, 210);
-    position: absolute;
-    left: 31%;
-    top: 30%;
+.blank {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(210, 210, 210);
+  position: absolute;
+  left: 31%;
+  top: 30%;
 }
