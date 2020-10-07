@@ -42,7 +42,7 @@ class Wheel extends React.Component {
     );
   }
 
-  wheelControll = (e) => {
+  wheelControl = (e) => {
     const { updateActiveMenu, currentMenu } = this.props;
 
     if (e.detail.distanceFromOrigin === 0) {
@@ -76,7 +76,7 @@ class Wheel extends React.Component {
       moveForward,
       moveBackward,
     } = this.props;
-    const wheelControll = this.wheelControll;
+    const wheelControl = this.wheelControl;
     const wheel = document.getElementById("wheel");
     const activeRegion = ZingTouch.Region(wheel);
     const menuIcon = document.getElementById("menu");
@@ -88,7 +88,7 @@ class Wheel extends React.Component {
       changeMenu(-1, -1);
     });
     activeRegion.bind(wheel, "rotate", function (e) {
-      wheelControll(e);
+      wheelControl(e);
     });
     activeRegion.bind(playPause, "tap", function (e) {
       togglePlayPause();

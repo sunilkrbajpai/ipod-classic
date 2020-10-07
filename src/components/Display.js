@@ -27,6 +27,7 @@ class Display extends React.Component {
       songImageURL,
       audio,
       songUrl,
+      moveForward,
     } = this.props;
     return (
       <div className="display">
@@ -83,6 +84,7 @@ class Display extends React.Component {
             playing={playing}
             songIndex={songIndex}
             songItems={songItems}
+            moveForward={moveForward}
           />
         )}
         {currentMenu === 8 && <Themes active={active} />}

@@ -49,8 +49,9 @@ class App extends React.Component {
   // this function is used to skip to next song
   moveForward = () => {
     if (this.state.playing === true) {
-      this.state.audio.pause();
+      this.state.audio.pause(); //pause songs
       let songIndex = this.state.songIndex;
+      //change songs
       if (songIndex === this.state.songItemsUrl.length - 1) {
         songIndex = 0;
       } else {
@@ -60,6 +61,7 @@ class App extends React.Component {
       this.setState(
         { songIndex: songIndex, songUrl: songUrl, audio: new Audio(songUrl) },
         () => {
+          // play song
           this.state.audio.play();
         }
       );
@@ -69,8 +71,9 @@ class App extends React.Component {
   // this function is used to skip to prev song
   moveBackward = () => {
     if (this.state.playing === true) {
-      this.state.audio.pause();
+      this.state.audio.pause(); //pause song
       let songIndex = this.state.songIndex;
+      //change song
       if (songIndex === 0) {
         songIndex = this.state.songItemsUrl.length - 1;
       } else {
@@ -80,6 +83,7 @@ class App extends React.Component {
       this.setState(
         { songIndex: songIndex, songUrl: songUrl, audio: new Audio(songUrl) },
         () => {
+          //play song
           this.state.audio.play();
         }
       );

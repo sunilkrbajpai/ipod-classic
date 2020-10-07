@@ -1,11 +1,11 @@
 /* music container */
-.back{
-    width: 270px;
-    height: 210px;
-    background-color: #E3F2FD;
+.back {
+  width: 270px;
+  height: 210px;
+  background-color: #f6f6f6;
 }
 
 /* heading for music */
-h2{
-    margin: 2px;
+h2 {
+  margin: 2px;
 }

@@ -26,11 +26,36 @@ class Playing extends React.Component {
 
   // Render playing screen
   render() {
-    const { songItems, playing, songIndex, audio, songImageURL } = this.props;
+    const {
+      songItems,
+      playing,
+      songIndex,
+      audio,
+      songImageURL,
+      moveForward,
+    } = this.props;
 
+    if (this.state.currentTime === audio.duration) {
+      moveForward();
+    }
     const percentageComplete = {
       width: (this.state.currentTime / audio.duration) * 100 + "%",
     };
+    const currentTimeShow = Math.floor(this.state.currentTime % 60 > 10)
+      ? Math.floor(this.state.currentTime / 60) +
+        ":" +
+        Math.floor(this.state.currentTime % 60)
+      : Math.floor(this.state.currentTime / 60) +
+        ":0" +
+        Math.floor(this.state.currentTime % 60);
+    var durationShow = Math.floor(audio.duration % 60 > 10)
+      ? Math.floor(audio.duration / 60) + ":" + Math.floor(audio.duration % 60)
+      : Math.floor(audio.duration / 60) +
+        ":0" +
+        Math.floor(audio.duration % 60);
+    if (durationShow === "NaN:0NaN") {
+      durationShow = "0:00";
+    }
     return (
       <div className="now-playing-container">
         <div className="song-details">
@@ -45,9 +70,11 @@ class Playing extends React.Component {
             {!playing && <h5 className="statusTxt blink_me">Paused</h5>}
           </div>
         </div>
+        <span className="showTime">{currentTimeShow}</span>
         <div id="myProgress">
           <div id="myBar" style={percentageComplete}></div>
         </div>
+        <span className="showTime">{durationShow}</span>
       </div>
     );
   }

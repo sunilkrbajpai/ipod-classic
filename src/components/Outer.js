@@ -42,6 +42,7 @@ class Case extends React.Component {
             songImageURL={songImageURL}
             audio={audio}
             songUrl={songUrl}
+            moveForward={moveForward}
           />
           <Wheel
             theme={theme}
@@ -55,7 +56,9 @@ class Case extends React.Component {
             moveBackward={moveBackward}
           />
         </div>
-        <span className="span-bottom">Made by SKB with ❤️</span>
+        <span className="span-bottom">
+          Made by <b>Sunil</b> with ❤️
+        </span>
       </div>
     );
   }

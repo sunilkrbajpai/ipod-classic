@@ -11,11 +11,15 @@ export default class About extends Component {
           <br />
           <br />
           About Developer: &nbsp;
-          <a href="https://sunilkrbajpai.github.io/resume/">Visit here</a>
+          <a href="https://sunilkrbajpai.github.io/resume/" target="_blank">
+            Visit here
+          </a>
           <br></br>
           <br></br>
           Visit Github profile: &nbsp;
-          <a href="https://www.github.com/sunilkrbajpai">Click here</a>
+          <a href="https://www.github.com/sunilkrbajpai" target="_blank">
+            Click here
+          </a>
         </p>
       </div>
     );

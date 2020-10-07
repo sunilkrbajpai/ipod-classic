@@ -16,12 +16,8 @@ class Header extends React.Component {
     // update time after every 10 seconds
     this.stateId = setInterval(() => {
       this.setState({ time: this.getCurrentTime() });
-    }, 10000);
+    }, 5000);
   }
-
-  //   componentWillMount() {
-  //     clearInterval(this.stateId);
-  //   }
 
   getCurrentTime() {
     //   get current time and set value accordingly
